@@ -1,9 +1,9 @@
 # Project 1 
 Group Members:-
 
-Chandan Kumar - CWID - A20525237 
-Nanda Kishore Thummala - CWID - 
-Niharika
+* Chandan Kumar - CWID - A20525237 
+* Nanda Kishore Thummala - CWID - 
+* Niharika
 
 
 Linear Regression with ElasticNet Regularization
