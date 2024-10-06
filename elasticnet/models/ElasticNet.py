@@ -1,7 +1,7 @@
 import numpy as np
 
 class ElasticNetModel:
-    def __init__(self, alpha=0.5, l1_ratio=0.5, max_iter=10000, tol=1e-6, learning_rate=0.01):
+    def __init__(self, alpha, l1_ratio, max_iter, tol=1e-6, learning_rate=0.01):
         """
         Initialize the ElasticNet regression model.
 
