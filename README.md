@@ -1,9 +1,13 @@
 # Project 1 
-Group Members:-
 
-* Chandan Kumar - CWID - A20525237 
-* Nanda Kishore Thummala - CWID - 
-* Niharika
+* **Group Members:-**
+
+* **Chandan Kumar - CWID - A20525237**
+* **Nanda Kishore Thummala - CWID - A20595194**
+* **Niharika Bandaru - CWID - A20600363**
+
+
+To run the python code you can use this **"python -m elasticnet.tests.test_ElasticNetModel"**
 
 
 Linear Regression with ElasticNet Regularization
