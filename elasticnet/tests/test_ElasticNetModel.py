@@ -5,6 +5,7 @@ import matplotlib
 matplotlib.use('TkAgg')  # This is one of the options, you can also use 'Qt5Agg', etc.
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 from elasticnet.models.ElasticNet import ElasticNetModel
 
 
@@ -23,7 +24,13 @@ def test_predict():
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    model = ElasticNetModel(alpha=0.5, l1_ratio=0.5, max_iter=20000, learning_rate=0.01)
+    # Standardize features
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
+
+
+    model = ElasticNetModel(alpha=0.5, l1_ratio=0.5, max_iter=50000, learning_rate=0.001)
     results = model.fit(X_train,y_train)
     preds = results.predict(X_test)
     print("Predicted values:", preds)
